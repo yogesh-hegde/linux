@@ -146,9 +146,9 @@ static int kirin_drm_kms_init(struct drm_device *dev)
 	/* reset all the states of crtc/plane/encoder/connector */
 	drm_mode_config_reset(dev);
 
-	if (fbdev)
-		priv->fbdev = kirin_drm_fbdev_init(dev);
-	else
+	
+	
+	
 		priv->fbdev = drm_fbdev_cma_init(dev, 32, 1, 1);
 
 	/* init kms poll for handling hpd */
